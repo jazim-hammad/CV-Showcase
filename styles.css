@@ -20,7 +20,11 @@
   padding: 0 10px;
   box-sizing: border-box;
   font-family: "Poiret One", sans-serif;
-  color: hsla(27, 97%, 75%, 0.76);
+  color: hsla(27, 97%, 75%, 0.7);
+  transition: color 1s ease;
+}
+.timeline__content-title:hover {
+  color: hsla(27, 97%, 75%, 0.9);
 }
 .timeline__content-desc {
   margin: 0;
@@ -30,6 +34,10 @@
   font-family: "Montserrat", sans-serif;
   font-weight: normal;
   line-height: 25px;
+  transition: color 1s ease;
+}
+.timeline__content-desc:hover {
+  color: #fcfcfc;
 }
 .timeline:before {
   position: absolute;
@@ -117,7 +125,12 @@
 }
 .timeline__img {
   max-width: 100%;
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 10px rgba(22, 22, 22, 0.4);
+  border-radius: 5px;
+  transition: box-shadow 1s ease;
+}
+.timeline__img:hover {
+  box-shadow: 0 0 15px rgba(118, 118, 118, 0.4);
 }
 .timeline-container {
   width: 100%;
@@ -150,21 +163,28 @@
   font-weight: normal;
   margin: 0;
 }
-.timeline-header__subtitle {
+.timeline-header__subtitle,
+.timeline-header p,
+.timeline-header a {
   color: rgba(252, 248, 244, 0.5019607843);
   font-family: "Poiret One", sans-serif;
   font-size: 16px;
   letter-spacing: 5px;
   margin: 10px 0 0 0;
   font-weight: normal;
+  text-decoration: none;
+  transition: color 1s ease;
 }
-
-.footer {
-  padding: 60px 0;
-  text-align: center;
-}
-.footer a {
+.timeline-header__subtitle:hover,
+.timeline-header p:hover,
+.timeline-header a:hover {
   color: #fcf8f4;
-  display: inline-block;
-  font-family: "Montserrat", sans-serif;
+}
+.timeline-header a {
+  font-weight: bold;
+  color: rgba(243, 136, 29, 0.5019607843);
+  transition: color 1s ease;
+}
+.timeline-header a:hover {
+  color: rgba(243, 136, 29, 0.831372549);
 }/*# sourceMappingURL=styles.css.map */

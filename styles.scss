@@ -31,7 +31,11 @@ $timeline-container-width: 100%;
       padding: 0 10px;
       box-sizing: border-box;
       font-family: $heading-font;
-      color: hsla(27, 97%, 75%, 0.76);
+      color: hsla(27, 97%, 75%, 0.7);
+      transition: color 1s ease;
+      &:hover {
+        color: hsla(27, 97%, 75%, 0.9);
+      }
     }
     &-desc {
       margin: 0;
@@ -41,6 +45,10 @@ $timeline-container-width: 100%;
       font-family: $content-font;
       font-weight: normal;
       line-height: 25px;
+      transition: color 1s ease;
+      &:hover {
+        color: rgba(#fcfcfc, 1);
+      }
     }
   }
   &:before {
@@ -125,7 +133,12 @@ $timeline-container-width: 100%;
   }
   &__img {
     max-width: 100%;
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 10px rgba(22, 22, 22, 0.4);
+    border-radius: 5px;
+    transition: box-shadow 1s ease;
+    &:hover {
+      box-shadow: 0 0 15px rgba(118, 118, 118, 0.4);
+    }
   }
   &-container {
     width: $timeline-container-width;
@@ -157,23 +170,28 @@ $timeline-container-width: 100%;
       font-weight: normal;
       margin: 0;
     }
-    &__subtitle {
+    &__subtitle,
+    p,
+    a {
       color: #fcf8f480;
       font-family: $heading-font;
       font-size: 16px;
       letter-spacing: 5px;
       margin: 10px 0 0 0;
       font-weight: normal;
+      text-decoration: none;
+      transition: color 1s ease;
+      &:hover {
+        color: #fcf8f4;
+      }
     }
-  }
-}
-
-.footer {
-  padding: 60px 0;
-  text-align: center;
-  a {
-    color: #fcf8f4;
-    display: inline-block;
-    font-family: $content-font;
+    a {
+      font-weight: bold;
+      color: #f3881d80;
+      transition: color 1s ease;
+      &:hover {
+        color: #f3881dd4;
+      }
+    }
   }
 }
