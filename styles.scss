@@ -23,6 +23,20 @@ $timeline-container-width: 100%;
   max-width: $timeline-width;
   position: relative;
   &__content {
+    .details-button {
+      font-family: $content-font;
+      color: rgba(#fcf8f4, 0.7);
+      text-decoration: none;
+      text-align: center;
+      display: inline-block;
+      margin-top: 5px;
+      transition: color 0.5s ease;
+
+      &:hover {
+        color: hsla(27, 97%, 75%, 0.7);
+      }
+    }
+
     &-title {
       font-weight: bold;
       font-size: 40px;
@@ -82,7 +96,7 @@ $timeline-container-width: 100%;
       color: rgba(#fff, 0.5);
       font-size: 13px;
       font-family: $heading-font;
-      border-left: 2px solid rgba(#fff, 0.5);
+      border-left: 2px solid hsla(27, 97%, 75%, 0.9);
       top: 70%;
       margin-top: -5px;
       padding-left: 15px;
@@ -97,7 +111,7 @@ $timeline-container-width: 100%;
         left: calc(-100% - 56px);
         padding-left: 0;
         border-left: none;
-        border-right: 2px solid rgba(#fff, 0.5);
+        border-right: 2px solid hsla(27, 97%, 75%, 0.9);
         padding-right: 15px;
       }
     }
