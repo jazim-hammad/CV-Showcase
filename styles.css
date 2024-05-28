@@ -4,6 +4,22 @@
   padding: 0;
 }
 
+/* Custom Scrollbar Styles */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(77, 77, 77, 0.653);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(53, 53, 53, 0.575);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(53, 53, 53, 0.675);
+}
+
 .timeline {
   display: flex;
   margin: 0 auto;
@@ -26,7 +42,7 @@
 }
 .timeline__content-title {
   font-weight: bold;
-  font-size: 40px;
+  font-size: 35px;
   margin: -10px 0 0 0;
   transition: 0.4s;
   padding: 0 10px;
